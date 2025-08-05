@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.removeItem("token");
         localStorage.removeItem("username");
         localStorage.removeItem("user");
-        window.location.href = "/account/login.html";
+        
+        window.location.href = "FED1_PE1_RESIT/account/login.html";
       });
     }
     if (loginLink) loginLink.style.display = "none";
