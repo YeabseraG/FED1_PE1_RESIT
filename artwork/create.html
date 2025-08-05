@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Artwork</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+  <h1 class="logo">Art Gallery</h1>
+  <div class="nav-links">
+    <a href="/index.html">Home</a>
+    <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
+    <a href="/artwork/profile.html" id="profile-link" style="display:none;">Profile</a>
+    <a href="../account/login.html" id="login-link">Login</a>
+    <a href="#" id="logout-link" style="display:none;">Logout</a>
+  </div>
+</nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+    <h2>Submit New Artwork</h2>
+    <form id="artwork-form">
+  <label>Title<input type="text" name="title" required /></label>
+  <label>Artist<input type="text" name="artist" required /></label>
+  <label>Year<input type="number" name="year" min="1000" max="2100" required /></label>
+  <label>Medium<input type="text" name="medium" required /></label>
+  <label>Location<input type="text" name="location" required /></label>
+  <label>Image URL<input type="url" name="image" required /></label>
+  <label>Description<textarea name="description" rows="4" required></textarea></label>
+  <button type="submit">Submit</button>
+</form>
+<p id="form-message"></p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ArtSpace. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/create.js"></script>
+  <script src="../js/navbar.js"></script>
+</body>
+</html>
