@@ -5,7 +5,7 @@ const API_KEY = "2681b5ac-d293-4e1c-96db-a5678866fa60";
 
 console.log("Token:", token);
 if (!token) {
-  window.location.href = "/account/login.html";
+  window.location.href = "../account/login.html";
 }
 
 form.addEventListener("submit", async (e) => {
