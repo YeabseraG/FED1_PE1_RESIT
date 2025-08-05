@@ -61,7 +61,7 @@ form.addEventListener("submit", async (e) => {
     form.reset();
 
     setTimeout(() => {
-      window.location.href = "/artwork/profile.html";
+      window.location.href = "../artwork/profile.html";
     }, 1500);
   } catch (error) {
     console.error("Create artwork error:", error);
