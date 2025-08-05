@@ -273,3 +273,18 @@ form button[type="submit"]:hover {
 
 
 
+.edit-btn, .delete-btn {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-bottom: 10px; /* space below each button */
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  background-color: #333; /* slightly lighter on hover */
+}
