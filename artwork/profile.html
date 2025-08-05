@@ -2,34 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="Description" content="My profile page, showing my artworks">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Profile | Art Gallery</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<header>
-    <nav class="navbar">
-  <h1 class="logo">Art Gallery</h1>
-  <div class="nav-links">
-    <a href="/index.html">Home</a>
-    <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
-    <a href="/artwork/profile.html" id="profile-link" style="display: none;">Profile</a>
-    <a href="../account/login.html" id="login-link">Login</a>
-    <a href="#" id="logout-link" style="display:none;">Logout</a>
-  </div>
-</nav>
-</header>
+  <header role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <h1 class="logo">Art Gallery</h1>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/artwork/create.html" id="post-link" class="hidden">Post</a>
+        <a href="/artwork/profile.html" id="profile-link" class="hidden">Profile</a>
+        <a href="../account/login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" class="hidden">Logout</a>
+      </div>
+    </nav>
+  </header>
 
-
-  <main>
-    <section>
-      <h2 style="text-align:center;">My Uploaded Artworks</h2>
+  <main role="main">
+    <section aria-labelledby="uploaded-artworks">
+      <h2 id="uploaded-artworks" style="text-align:center;">My Uploaded Artworks</h2>
       <div id="user-artworks" class="gallery-grid"></div>
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2025 Art Gallery. All rights reserved.</p>
   </footer>
 

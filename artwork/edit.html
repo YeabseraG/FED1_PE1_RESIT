@@ -2,37 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="Description" content="Page to edit/update your own artworks" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit - ArtGallery</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-
-  <title>Art Gallery</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
-<header>
-    <nav class="navbar">
-  <h1 class="logo">Art Gallery</h1>
-  <div class="nav-links">
-    <a href="/index.html">Home</a>
-    <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
-    <a href="/artwork/profile.html" id="profile-link" style="display:none;">Profile</a>
-    <a href="../account/login.html" id="login-link">Login</a>
-    <a href="#" id="logout-link" style="display:none;">Logout</a>
-  </div>
-</nav>
-  </header>
 <body>
-  <h1>Edit Artwork</h1>
-  <form id="edit-artwork-form">
-    <label>Title: <input type="text" name="title" required /></label><br/>
-    <label>Artist: <input type="text" name="artist" required /></label><br/>
-    <label>Year: <input type="number" name="year" required /></label><br/>
-    <label>Medium: <input type="text" name="medium" required /></label><br/>
-    <label>Location: <input type="text" name="location" required /></label><br/>
-    <label>Image URL: <input type="url" name="imageUrl" required /></label><br/>
-    <label>Description: <textarea name="description" required></textarea></label><br/>
-    <button type="submit">Update Artwork</button>
-  </form>
-  <p id="form-message"></p>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Art Gallery</h1>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
+        <a href="/artwork/profile.html" id="profile-link" style="display:none;">Profile</a>
+        <a href="../account/login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display:none;">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h1>Edit Artwork</h1>
+      <form id="edit-artwork-form">
+        <label>
+          Title:
+          <input type="text" name="title" required />
+        </label>
+        <label>
+          Artist:
+          <input type="text" name="artist" required />
+        </label>
+        <label>
+          Year:
+          <input type="number" name="year" required />
+        </label>
+        <label>
+          Medium:
+          <input type="text" name="medium" required />
+        </label>
+        <label>
+          Location:
+          <input type="text" name="location" required />
+        </label>
+        <label>
+          Image URL:
+          <input type="url" name="imageUrl" required />
+        </label>
+        <label>
+          Description:
+          <textarea name="description" required></textarea>
+        </label>
+        <button type="submit">Update Artwork</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+  </main>
 
   <script src="../js/navbar.js"></script>
   <script src="../js/edit.js"></script>

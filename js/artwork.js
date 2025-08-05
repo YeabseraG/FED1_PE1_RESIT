@@ -1,4 +1,4 @@
-const BASE_URL = 'https://v2.api.noroff.dev'; // or whatever your API is
+const BASE_URL = 'https://v2.api.noroff.dev';
 
 const params = new URLSearchParams(window.location.search);
 const artworkId = params.get("id");

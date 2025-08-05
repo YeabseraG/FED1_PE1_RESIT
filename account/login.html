@@ -1,41 +1,47 @@
-<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="Description" content="Art Gallery login page" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login | ArtSpace</title>
+  <title>Login | ArtGallery</title>
   <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-  <h1 class="logo">Art Gallery</h1>
-  <div class="nav-links">
-    <a href="/index.html">Home</a>
-    <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
-    <a href="../account/login.html" id="login-link">Login</a>
-    <a href="#" id="logout-link" style="display:none;">Logout</a>
-  </div>
-</nav>
+      <h1 class="logo">Art Gallery</h1>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
+        <a href="../account/login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display:none;">Logout</a>
+      </div>
+    </nav>
   </header>
 
   <main>
     <section class="form-container">
       <h2>Login</h2>
       <form id="login-form">
-  <label>Email<input type="email" name="email" required /></label>
-  <label>Password<input type="password" name="password" required /></label>
-  <button type="submit">Login</button>
-</form>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" required />
+        </label>
+        <button type="submit">Login</button>
+      </form>
 
-<p id="form-message"></p>
+      <p id="form-message"></p>
 
-<div style="margin-top: 1rem; text-align: center;">
-  <p>Don't have an account?</p>
-  <a href="/account/register.html" style="color: #0078d7; font-weight: bold;">Register here</a>
-</div>
-
+      <div style="margin-top: 1rem; text-align: center;">
+        <p>Don't have an account?</p>
+        <a href="/account/register.html" style="color: #0078d7; font-weight: bold;">Register here</a>
+      </div>
     </section>
   </main>
 

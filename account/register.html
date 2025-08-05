@@ -2,41 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="Description" content="Art Gallery account registration page" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Register - ArtSpace</title>
+  <title>Register - ArtGallery</title>
   <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <nav class="navbar">
-  <h1 class="logo">Art Gallery</h1>
-  <div class="nav-links">
-    <a href="/index.html">Home</a>
-    <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
-    <a href="../account/login.html" id="login-link">Login</a>
-    <a href="#" id="logout-link" style="display:none;">Logout</a>
-  </div>
-</nav>
+      <h1 class="logo">Art Gallery</h1>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/artwork/create.html" id="post-link" style="display:none;">Post</a>
+        <a href="../account/login.html" id="login-link">Login</a>
+        <a href="#" id="logout-link" style="display:none;">Logout</a>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <div class="form-container">
-    <h2>Create Your Account</h2>
-    <form id="register-form">
-      <label>Name
-        <input type="text" name="name" pattern="^[a-zA-Z0-9_]+$" title="Only letters, numbers and underscore allowed" required />
-      </label>
-      <label>Email
-        <input type="email" name="email" pattern=".+@stud.noroff.no" title="Must be a valid stud.noroff.no email" required />
-      </label>
-      <label>Password
-        <input type="password" name="password" minlength="8" required />
-      </label>
-      <button type="submit">Register</button>
-    </form>
-    <p id="form-message"></p>
-    </div>
+    <section class="form-container">
+      <h2>Create Your Account</h2>
+      <form id="register-form">
+        <label>
+          Name
+          <input
+            type="text"
+            name="name"
+            pattern="^[a-zA-Z0-9_]+$"
+            title="Only letters, numbers and underscore allowed"
+            required
+          />
+        </label>
+        <label>
+          Email
+          <input
+            type="email"
+            name="email"
+            pattern=".+@stud.noroff.no"
+            title="Must be a valid stud.noroff.no email"
+            required
+          />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" minlength="8" required />
+        </label>
+        <button type="submit">Register</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
   </main>
 
   <footer>

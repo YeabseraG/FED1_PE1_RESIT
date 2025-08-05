@@ -1,4 +1,3 @@
-// login.js
 const form = document.getElementById("login-form");
 const message = document.getElementById("form-message");
 
@@ -34,7 +33,7 @@ form.addEventListener("submit", async (e) => {
     message.style.color = "lightgreen";
 
     setTimeout(() => {
-      window.location.href = "/index.html"; // or redirect to profile
+      window.location.href = "/index.html";
     }, 1500); 
   } catch (err) {
     message.textContent = err.message;

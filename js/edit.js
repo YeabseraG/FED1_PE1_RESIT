@@ -1,4 +1,3 @@
-// edit.js
 const form = document.getElementById("edit-artwork-form");
 const message = document.getElementById("form-message");
 const token = localStorage.getItem("token");

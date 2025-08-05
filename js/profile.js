@@ -1,7 +1,6 @@
 const user = JSON.parse(localStorage.getItem("user"));
 const token = localStorage.getItem("token");
 const container = document.getElementById("user-artworks");
-
 const API_KEY = "2681b5ac-d293-4e1c-96db-a5678866fa60";
 
 if (!container) {
@@ -42,16 +41,16 @@ if (!container) {
           const card = document.createElement("div");
           card.className = "art-card";
           card.innerHTML = `
-  <a href="/artwork/index.html?id=${art.id}">
-    <img src="${art.image?.url || 'https://placehold.co/600x400'}" alt="${art.image?.alt || art.title}">
-  </a>
-  <div class="art-info">
-    <h3>${art.title}</h3>
-    <p>${art.description || "No description"}</p>
-    <button onclick="window.location.href='/artwork/edit.html?id=${art.id}'" class="edit-btn">Edit</button>
-    <button data-id="${art.id}" class="delete-btn">Delete</button>
-  </div>
-`;
+            <a href="/artwork/index.html?id=${art.id}">
+              <img src="${art.image?.url || 'https://placehold.co/600x400'}" alt="${art.image?.alt || art.title}">
+            </a>
+            <div class="art-info">
+              <h3>${art.title}</h3>
+              <p>${art.description || "No description"}</p>
+              <button onclick="window.location.href='/artwork/edit.html?id=${art.id}'" class="edit-btn">Edit</button>
+              <button data-id="${art.id}" class="delete-btn">Delete</button>
+            </div>
+          `;
 
           container.appendChild(card);
         });
@@ -65,6 +64,7 @@ if (!container) {
 
     function setupDeleteListeners() {
       const deleteButtons = document.querySelectorAll(".delete-btn");
+
       deleteButtons.forEach(btn => {
         btn.addEventListener("click", async () => {
           const id = btn.dataset.id;

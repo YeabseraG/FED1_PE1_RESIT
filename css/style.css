@@ -1,9 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
+/* === RESET & BASE STYLES === */
 html, body {
   height: 100%;
   margin: 0;
@@ -11,75 +6,51 @@ html, body {
 }
 
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* === LAYOUT === */
 main {
   flex: 1;
   display: block;
   padding: 2rem 1rem;
 }
 
-.form-container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-  background-color: #222;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-  color: #eee;
-  font-family: 'Roboto', sans-serif;
-}
-
-
-
-
-
-
-
-
-
+/* === HEADER & NAVBAR === */
 header {
-  background-color: #222; /* dark grey instead of black */
+  background-color: #222; 
   padding: 1rem 2rem;
   color: white;
 }
 
-.art-card:hover {
-  transform: scale(1.02);
-}
-
 .navbar {
   display: flex;
-  justify-content: space-between; /* push h1 left, nav right */
+  justify-content: space-between; 
   align-items: center;
 }
 
 .navbar h1 {
-  margin: 0;
+  margin: 0 1.5rem 0 0;
   font-size: 1.8rem;
   font-family: 'Pacifico', cursive;
-  margin-right: 1.5rem;
   color: #fff;
-  text-decoration: none;
   font-weight: 500;
-}
-
-nav a {
-  color: white;
   text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: bolder;
 }
 
 nav a {
   margin: 0 1rem;
   color: #fff;
   text-decoration: none;
+  font-weight: bolder;
 }
 
+/* === FOOTER === */
 footer {
   background: #222;
   color: white;
@@ -87,6 +58,7 @@ footer {
   text-align: center;
 }
 
+/* === GALLERY GRID & ART CARDS === */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -96,7 +68,6 @@ footer {
   padding: 1rem;
 }
 
-
 .art-card {
   background: #e7e7e7;
   border-radius: 8px;
@@ -105,8 +76,6 @@ footer {
   transition: transform 0.2s;
   color: #222;
   font-family: 'Roboto', sans-serif;
-
-
 }
 
 .art-card:hover {
@@ -124,25 +93,7 @@ footer {
   font-size: 0.9rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* === ARTWORK DETAIL PAGE === */
 .artwork-detail {
   display: flex;
   flex-direction: column;
@@ -171,24 +122,18 @@ footer {
   line-height: 1.6;
 }
 
+/* === FORM STYLES === */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  color: #eee;
+  font-family: 'Roboto', sans-serif;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Form heading */
 .form-container h2 {
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -197,7 +142,6 @@ footer {
   text-align: center;
 }
 
-/* Form labels and inputs */
 form label {
   display: block;
   margin-bottom: 1rem;
@@ -228,15 +172,13 @@ form textarea:focus {
   outline: none;
 }
 
-/* Textarea resize */
 form textarea {
   resize: vertical;
   min-height: 100px;
 }
 
-/* Submit button */
 form button[type="submit"] {
-  background-color: #0078d7; /* nice blue */
+  background-color: #0078d7; 
   color: #fff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -253,38 +195,40 @@ form button[type="submit"]:hover {
   background-color: #005ea3;
 }
 
-/* Form message */
 #form-message {
   margin-top: 1rem;
   font-weight: 600;
   text-align: center;
 }
 
-/* Responsive tweak */
-@media (max-width: 600px) {
-  .form-container {
-    margin: 2rem 1rem 3rem;
-    padding: 1.5rem;
-  }
-}
-
-
-
-
-
-
-.edit-btn, .delete-btn {
+/* === BUTTONS: EDIT & DELETE === */
+.edit-btn, 
+.delete-btn {
   background-color: #222;
   color: white;
   border: none;
   padding: 8px 12px;
-  margin-bottom: 10px; /* space below each button */
+  margin-bottom: 10px; 
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
-.edit-btn:hover, .delete-btn:hover {
-  background-color: #333; /* slightly lighter on hover */
+.edit-btn:hover, 
+.delete-btn:hover {
+  background-color: #333; 
+}
+
+/* === UTILITIES === */
+.hidden {
+  display: none;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 2rem 1rem 3rem;
+    padding: 1.5rem;
+  }
 }
