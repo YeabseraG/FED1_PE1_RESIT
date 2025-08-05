@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.removeItem("token");
         localStorage.removeItem("username");
         localStorage.removeItem("user");
-        window.location.href = "../account/login.html";
+        window.location.href = "../index.html";
       });
     }
     if (loginLink) loginLink.style.display = "none";
