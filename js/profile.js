@@ -41,13 +41,13 @@ if (!container) {
           const card = document.createElement("div");
           card.className = "art-card";
           card.innerHTML = `
-            <a href="/artwork/index.html?id=${art.id}">
+            <a href="../artwork/index.html?id=${art.id}">
               <img src="${art.image?.url || 'https://placehold.co/600x400'}" alt="${art.image?.alt || art.title}">
             </a>
             <div class="art-info">
               <h3>${art.title}</h3>
               <p>${art.description || "No description"}</p>
-              <button onclick="window.location.href='/artwork/edit.html?id=${art.id}'" class="edit-btn">Edit</button>
+              <button onclick="window.location.href='../artwork/edit.html?id=${art.id}'" class="edit-btn">Edit</button>
               <button data-id="${art.id}" class="delete-btn">Delete</button>
             </div>
           `;
